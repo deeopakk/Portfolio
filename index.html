@@ -1,0 +1,2373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="img/jpg" href="High contrast black and white wolf head logo vector illustration_.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+
+    <style>
+       :root{
+    --primary-color:#6366f1;
+    --accent-color:#3f83f8;
+    --text-color:#333333;
+    --link-color:#2563eb;
+    --background-color:#ffffff;
+    --light-gray:#f0f0f0;
+    --gray:#808080;
+    --dark-gray:#555;
+    
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter',sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    text-align: center;
+    background-color: #FFDEE9;
+    background-color: #FEE140;
+background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    padding: 0.1rem;
+
+}
+
+.logo-icon{
+    height: 3.875rem;;
+    width: 4.875rem;
+    /* border: 1px solid black; */
+    position: relative;
+    bottom: px;
+    left: 5px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+    gap: 0.65rem;
+    
+
+}
+
+.logo-text{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1380px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav{
+    gap: 1.5rem;
+    display: none;
+
+}
+
+@media screen and (min-width:800px) {
+    .nav{
+        display: flex;
+    }
+}
+@media screen and (min-width:1064px) {
+    .nav{
+        display: flex;
+    }
+}
+
+.nav-link{
+    color: #718096;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transform: color 0.1s ;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.contact-button{
+    border-radius: 0.375rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    transform: all 0.1s;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    display: none;
+   
+
+}
+
+@media screen and (min-width:800px) {
+    .contact-button{
+        display: block;
+    }
+}
+@media screen and (min-width:1064px) {
+    .contact-button{
+        display: block;
+    }
+}
+
+.contact-button:hover{
+    background-color: #5254f8;
+}
+
+.menu-button{
+   display: none;
+   border: none;
+   border-radius: 0.375rem;
+   font-size: 1rem;
+   font-weight: 600;
+   background-color: var(--background-color);
+   padding: 0.5rem 0.9rem;
+
+
+}
+
+@media screen and (max-width:800px) {
+    .menu-button{
+        display: block;
+     }
+    
+}
+@media screen and (max-width:1064px) {
+    .menu-button{
+        display: block;
+     }
+    
+}
+
+.menu-icon{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.main_section{
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    grid-area: 2rem;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.6rem;
+}
+
+
+.content_left{
+    text-align: center;
+    animation: slidefromleft 1s ease forwards;
+    opacity: 0;
+    align-items: center;
+    
+}
+
+
+.socil-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom:20px;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 0.2rem solid #7a7575;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: var(--dark-gray);
+    font-size: 30px;
+  }
+  .socil-icons a:hover{
+    color: black;
+    transform: scale(1.3)translateY(-5px);
+    /* background-color: #b74b4b; */
+    
+  }
+
+@keyframes slidefromleft {
+    0%{
+       opacity: 0;
+       transform: translateX(-100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
+
+.section_label{
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+
+.section_title{
+    font-size: 2.3rem;
+    padding: 1.1rem;
+    color: var(--text-color);
+
+}
+
+.section_description{
+    color: var(--gray);
+    font-size: 1.13rem;
+}
+
+.button-group{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+    
+
+
+}
+
+
+.start-button,.tour-button{
+    border: none;
+    border-radius: 0.375rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    transform: all 0.1s;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.tour-button{
+    background-color: var(--dark-gray);
+}
+
+.start-button:hover{
+    background-color: #5254f8;
+}
+
+.tour-button:hover{
+    background-color: var(--gray);
+}
+
+.content_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container{
+    border-radius:1.225rem ;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgb(0,0,0,0,1);
+    height: 57vh;
+
+}
+
+.section-Image{
+    height: 100%;
+    width : 100%;
+    border-radius: 50%;
+    
+
+}
+
+@media screen and (min-width:800px) {
+    .main_section{
+        flex-direction: row;
+    }
+    
+    .content_left{
+        max-width: 50%;
+        text-align: left;
+    }
+
+    .section_title{
+        padding-left: 0;
+    }
+
+    .button-group{
+        justify-content: start;
+        padding-left:0 ;
+    }
+
+    .section_label{
+        font-size: 1rem;
+    }
+
+    .section_title{
+        font-size: 3.8rem;
+    }
+
+    .image-container{
+        height: 67vh;
+    }
+    .section_description{
+        font-size: 1.1rem;
+        color: var(--gray);
+        width: 75%;
+    }
+    
+   
+}
+@media screen and (min-width:1064px) {
+    .main_section{
+        flex-direction: row;
+    }
+    
+    .content_left{
+        max-width: 50%;
+        text-align: left;
+    }
+
+    .section_title{
+        padding-left: 0;
+    }
+
+    .button-group{
+        justify-content: start;
+        padding-left:0 ;
+    }
+
+    .section_label{
+        font-size: 1rem;
+    }
+
+    .section_title{
+        font-size: 3.8rem;
+    }
+
+    .image-container{
+        height: 67vh;
+    }
+    .section_description{
+        font-size: 1.1rem;
+        color: var(--gray);
+        width: 75%;
+    }
+    
+   
+}
+
+@media (min-width: 800px) {
+    .grid-container1{
+        grid-template-columns: 1,1fr; /* Stack boxes in a single column */
+        grid-template-rows: auto; /* Allow rows to adjust based on content */
+    }
+}
+@media (min-width: 1064px) {
+    .grid-container1{
+        grid-template-columns: 1,1fr; /* Stack boxes in a single column */
+        grid-template-rows: auto; /* Allow rows to adjust based on content */
+    }
+}
+
+
+.grid-container1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    
+    gap: 10px; /* Space between items */
+    height: 400px; /* Optional fixed height for the grid */
+}
+
+.grid-item {
+    background-color: #4CAF50; /* Background color for boxes */
+    color: white; /* Text color */
+    display: flex; /* Center content */
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border: 1px solid #fff; /* Optional border */
+}
+
+
+.feature-container{
+    background-color: var(--light-gray);
+    padding: 2.5rem 0;
+    text-align: start;
+}
+
+.feature-content{
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+}
+
+.main-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    
+    
+}
+
+.main-title{
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.main-description{
+    color: var(--gray);
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.feature-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* gap: 1rem; */
+    margin-top: 1.3rem;
+    /* row-gap: 1rem; */
+    grid-gap: 2rem;
+}
+
+.feature-svg{
+    width: 8.6rem;
+    height: 8.6rem;
+    border-radius: 50%;
+
+}
+
+.icon-container{
+    background-color: var(--background-color)\;
+    height: 3rem;
+    width: 3rem;
+    border-radius:49% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #658ee8; */
+    padding: 1.6rem;
+    /* border-radius: 1rem; */
+    gap: 1rem;
+    width: 100%;
+    height: 310px;
+}
+.feature-card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #658ee8; */
+    padding: 1.6rem;
+    /* border-radius: 1rem; */
+    gap: 1rem;
+    width: 100%;
+    height: 310px;
+    
+}
+
+.feature-card2{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    /* background-color: #658ee8; */
+    padding: 1.6rem;
+    /* border-radius: 1rem; */
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    
+    
+}
+
+.feature-title{
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.feature-description{
+ color: black;
+ font-size: 0.85rem;
+ 
+}
+.feature-description1{
+ color: black;
+ position: relative;
+ left: 40px;
+ 
+ 
+}
+.feature-description1 span1{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.feature-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skills-container {
+    width: 300px;
+    height: 300px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    /* position: relative;
+    left: 75px;
+    padding: 40px; */
+    line-height: 17px;
+    /* background-color: black; */
+    /* border-radius: 10%; */
+  }
+  
+  .skills-container label{
+    color: black
+    font-size: 20px;
+  }
+  h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: black;
+    
+  }
+  .skills{
+    margin-bottom: 15px;
+    
+  }
+  .skill-name {
+    margin-bottom: 5px;
+  }
+  .skill-bar {
+    height: 10px;
+    background-color: black;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    
+  }
+  .skill-progress {
+    height: 100%;
+    background-color: greenyellow;
+    /* border-radius: 15px; */
+  }
+
+  .info h1{
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+  }
+
+  .info{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+
+  .about-info2 span1{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    
+  }
+
+  .about-info2 span{
+    font-size: 16px;
+  }
+  .about-info3 {
+    font-size: 16px;
+  }
+
+  .about-info2 ul li{
+    list-style-type: none;
+  }
+
+  #project{
+    /* border: 1px solid red; */
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 25px;
+    /* border: 1px solid black; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    
+    
+  }
+
+  .but1{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    border-radius: 3rem;
+    }
+
+    .but1:hover{
+        background-color: #74EBD5;
+background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    }
+@media screen and (max-width:800px) {
+    .feature-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .feature-grid{
+        margin: 0.1rem;
+    }
+    
+    .qual-content{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,1fr);
+        
+    
+    }
+
+
+    .qual-main{
+       
+        
+        
+    
+    }
+   
+}
+@media screen and (max-width:1064px) {
+    .feature-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .feature-grid{
+        margin: 0.1rem;
+    }
+    
+    .qual-content{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,1fr);
+        
+    
+    }
+
+
+    .qual-main{
+       
+        
+        
+    
+    }
+   
+}
+
+.qual-content{
+    
+    /* border: 1px solid violet; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width: 100%;
+    /* height: 30%; */
+    align-items: center;
+    padding: 0px;
+    text-align: start;
+    padding: 10px 30px;
+   
+
+}
+.qual-main h1{
+    text-align: center;
+    border: 1px solid black;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    width: 100%;
+    padding: 1px;
+    
+}
+
+
+.qual-main{
+    border: 1px solid black;
+    padding: 1px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 110%;
+
+}
+
+.right-qual h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: ;
+    
+ }
+
+ .right-qual p{
+
+ }
+
+ .right-qual span{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+
+   
+    
+ }
+
+.right-qual{ 
+    width: 600px;
+    /* border: 1px solid red; */
+    padding-bottom: 17px;
+}
+
+.left-qual span{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+   
+    
+ }
+.left-qual h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: ;
+    
+ }
+
+.left-qual {
+    width: 600px;
+    /* border: 1px solid red; */
+}
+
+/* 2nd grid */
+
+.feature-containers{
+    background-color: var(--light-gray);
+    padding: 2.0rem 0;
+    text-align: start;
+}
+
+.feature-contents{
+    /* max-width: 1280px; */
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+}
+
+.main-infos{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    
+    
+}
+
+.main-titles{
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.main-descriptions{
+    color: var(--gray);
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.feature-grids{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 1rem;
+    
+    /* gap: 1rem; */
+    /* margin-top: 1.3rem; */
+    /* row-gap: 1rem; */
+    /* grid-gap: 2rem; */
+}
+
+.feature-svgs{
+    width: 8.6rem;
+    height: 8.6rem;
+    border-radius: 50%;
+
+}
+
+.icon-containers{
+    background-color: var(--background-color)\;
+    height: 3rem;
+    width: 3rem;
+    border-radius:49% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #658ee8; */
+    border: 1px solid black;
+    padding: 1.6rem;
+    border-radius: 1rem;
+    gap: 1rem;
+    width: 100%;
+    height: 45vh;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+  background-blend-mode: multiply,multiply;
+}
+
+.feature-titles{
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.feature-descriptions{
+ color: black;
+ font-size: 0.85rem;
+ 
+}
+.feature-descriptions ul li{
+ color: black;
+ font-size: 0.85rem;
+ text-decoration: dotted;
+}
+/* .feature-description1{
+ color: black;
+ position: relative;
+ left: 40px;
+ 
+} */
+.feature-descriptions span1{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.feature-infos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.but5{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    padding: 10px 0px;
+    margin: 10px;
+    /* width: 100px;
+    position: relative; */
+    
+}
+.but5 a{
+    border: 1px solid black;
+    padding: 10px 0px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    
+
+}
+
+.but5 a:hover{
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    
+}
+
+
+@media screen and (max-width:800px) {
+    .feature-grids{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+    }
+
+    .feature-grids{
+        margin: 0.1rem;
+    }
+    
+    .qual-contents{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,1fr);
+        
+    
+    }
+    
+
+    .feature-containers{
+    background-color: var(--light-gray);
+    padding: 2.0rem 0;
+    text-align: start;
+}
+
+.feature-contents{
+    /* max-width: 1280px; */
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+}
+
+.main-infos{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    
+    
+}
+
+.main-titles{
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.main-descriptions{
+    color: var(--gray);
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.feature-grids{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    
+    /* gap: 1rem; */
+    /* margin-top: 1.3rem; */
+    /* row-gap: 1rem; */
+    /* grid-gap: 2rem; */
+}
+
+.feature-svgs{
+    width: 8.6rem;
+    height: 8.6rem;
+    border-radius: 50%;
+
+}
+
+.icon-containers{
+    background-color: var(--background-color)\;
+    height: 3rem;
+    width: 3rem;
+    border-radius:49% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #658ee8; */
+    padding: 1.6rem;
+    /* border-radius: 1rem; */
+    gap: 1rem;
+    width: 100%;
+    height: 60vh;
+}
+/* .feature-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #658ee8; */
+    padding: 1.6rem;
+    /* border-radius: 1rem; */
+    gap: 1rem;
+    width: 100%;
+    height: 310px;
+} */
+@media screen and (max-width:1064px) {
+    .feature-grids{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+    }
+
+    .feature-grids{
+        margin: 0.1rem;
+    }
+    
+    .qual-contents{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,1fr);
+        
+    
+    }
+    
+
+    .feature-containers{
+    background-color: var(--light-gray);
+    padding: 2.0rem 0;
+    text-align: start;
+}
+
+.feature-contents{
+    /* max-width: 1280px; */
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+}
+
+.main-infos{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    
+    
+}
+
+.main-titles{
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.main-descriptions{
+    color: var(--gray);
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.feature-grids{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    
+    /* gap: 1rem; */
+    /* margin-top: 1.3rem; */
+    /* row-gap: 1rem; */
+    /* grid-gap: 2rem; */
+}
+
+.feature-svgs{
+    width: 8.6rem;
+    height: 8.6rem;
+    border-radius: 50%;
+
+}
+
+.icon-containers{
+    background-color: var(--background-color)\;
+    height: 3rem;
+    width: 3rem;
+    border-radius:49% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #658ee8; */
+    padding: 1.6rem;
+    /* border-radius: 1rem; */
+    gap: 1rem;
+    width: 100%;
+    height: 60vh;
+}
+/* .feature-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #658ee8; */
+    padding: 1.6rem;
+    /* border-radius: 1rem; */
+    gap: 1rem;
+    width: 100%;
+    height: 310px;
+} */
+
+/* .feature-card2{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    /* background-color: #658ee8; */
+    padding: 1.6rem;
+    /* border-radius: 1rem; */
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    
+    
+} */
+
+.feature-titles{
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.feature-descriptions{
+ color: black;
+ font-size: 0.85rem;
+}
+/* .feature-description1{
+ color: black;
+ position: relative;
+ left: 40px;
+ 
+} */
+.feature-descriptions span1{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.feature-infos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+@media screen and (max-width:800px) {
+    .feature-grids{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+    }
+
+    .feature-grids{
+        margin: 0.1rem;
+    }
+    
+    .sk-container{
+        display: grid;
+        grid-template-columns: 1fr; /* Single column */
+    }
+
+
+    .service{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+     }
+
+
+        .service h1{
+            
+            grid-column-start: 1;
+            grid-column-end: 4;
+          }
+          .typing-texts{
+            
+            grid-column-start: 1;
+            grid-column-end: 4;
+          }
+            
+}
+
+.service{ 
+    background-color: var(--light-gray);
+    height:75%;
+    /* max-width: 1280px; */
+    grid-area: 2rem;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.8rem;
+    
+    
+  }
+  .service h1{
+    /* margin-top: 4rem; */
+    font-size: 4rem;
+    
+  }
+  .typing-texts{
+    font-size: 3rem;
+    
+  }
+  .typing-texts span{
+    position: relative;
+    font-size: 3rem;
+  
+  
+  }
+  .typing-texts span::before{
+    content: "softwere developer";
+    color: #b74b4b;
+    animation: words 20s infinite;
+  }
+  .service p{
+    /* margin-bottom: 5rem; */
+    
+  }
+  .typing-texts span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    /* width: calc(100% + 8px); */
+    height: 100%;
+    border-left: 3px solid #b74b4b;
+    right: -8px;
+    animation: cursor 0.3s infinite;
+  
+  
+  }
+  @keyframes cursor{
+    to{ 
+      border-left: 3px solid #b74b4b;
+  
+  
+    }
+  }
+  @keyframes words{
+     0%,20%{
+      content:"WEB DEVELOPER";
+  
+     }
+     21%,40%{
+      content: " WEBSITE DESIGNER";
+  
+     }
+     41%,60%{
+      content: "UX/UI DESIGNER";
+     }
+     61%,80%{
+      content: "VIDEO EDITING";
+  
+     }
+     81%,100%{
+      content: "GRAPHIC DESIGNER";
+     }
+  
+  }
+
+
+  .mainipulation{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    
+}
+
+@media screen and (max-width:800px){
+    
+    .mainipulation{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }   
+    
+}
+  
+  .boxes{
+    width: 100%;
+    height: 18vh;
+    border-radius: 15px;
+    background: transparent;
+    backdrop-filter: blur(30px); */
+    padding: 1rem 1.5rem;
+    overflow: hidden; 
+    transition: 0.3s ease-in-out;
+    border: 1px  solid rgb(0, 0, 0);
+    padding: 1rem; 
+    
+    
+  }
+
+  .boxes:hover{
+    height: 35vh;
+    /* filter: drop-shadow(10px 20px 30px  yellow); */
+    box-shadow: 0 0 10px rgb(148, 153, 153), 0 0 30px rgb(0, 0, 0);
+    transform: scale(1) translateY(10px);
+  }
+  .boxes a{
+    color: aqua;
+    grid-column-start:1 ;
+    grid-column-end:4 ;
+  }
+  .boxes i{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    grid-column-start:1 ;
+    grid-column-end:4 ;
+  }
+  .boxes h2{
+    /* margin-bottom: 1rem; */
+    color: ;
+    grid-column-start:1 ;
+    grid-column-end:4 ;
+    
+  }
+  
+  .service h1{
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+  }
+  
+  
+  
+  .service h3{
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+  }
+  
+  .service p{
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 28px;
+    margin: 2px;
+    padding: 10px;
+    
+  
+  
+  
+  }
+  
+  
+
+
+  .skill-unique{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    /* max-width: 1280px; */
+    grid-area: 2rem;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.8rem;
+    /* background-color: var(--dark-gray); */
+    background-color: var(--light-gray);
+}
+
+.heading-skill h1{
+    font-size: 50px;
+    font-family: "Poppins", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration:underline;
+    background-color: var(--light-gray);
+}
+
+
+.skill{
+    background-color: rgb(0, 0, 0);
+    width: 1886px;
+    height: 100px;
+    margin: 5px;
+  }
+  .skill h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: #b74b4b;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    
+  
+  }
+  
+  
+  
+  .skill-unique{
+    /* border: 1px solid #ffffff; */
+   
+  
+  }
+  .skill-unique{
+    /* border: 1px solid red; */
+    text-align: center;
+    
+    
+    
+   
+  }
+  .skill-unique a i{
+    font-size: 5rem;
+    text-align: start;
+    
+    
+    /* border: 1px solid red; */
+  }
+  
+ #img6{
+    height: 90px;
+ }
+  
+  .skill-unique h2{
+    color: #b74b4b;
+    font-size: 2rem;
+    
+    /* border: 1px solid red; */
+  }
+  .skill-unique p{
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+  }
+@media screen and (max-width:800px){
+    
+    .skill-unique{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }   
+    
+}
+
+
+.footer-container{
+  
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    /* max-width: 1280px; */
+    /* border: 1px solid #B5FFFC; */
+    
+  }
+  
+  .footer{
+    max-width: 1280px;
+    padding:1.2rem 2.4rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+  }
+  
+  .footer-top{
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.65rem;
+  }
+  
+  .logo-svg{
+    width: 5rem;
+    height: 5rem;
+  }
+  
+  .comp-logo{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: -1.9rem;
+  }
+  .logo-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.28rem;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    left: 55px;
+  }
+  .social-icon1{
+    width: 3rem;
+    height: 3rem;
+  }
+  .filler-text{
+    font-size: 1rem;
+    color: #777;
+    padding: 1rem 0;
+    /* border: 1px solid black; */
+    height: 5px;
+    position: relative;
+    left: 60px;
+    bottom: 8px;
+  }
+  .social1{
+    display: flex;
+    gap: 0.8rem;
+    position: relative;
+    left: 65px;
+    
+    
+  }
+  .footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 58%;
+    grid-gap: 5.67rem;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .footer-grid-heading{
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  ul{
+    list-style-type: none;
+  }
+  .footer-link{
+    color: #a32727;
+    font-size: 0.875rem;
+  }
+  .footer-links-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+  }
+  
+  .footer-links-list:hover{
+    color: #2563eb;
+
+  }
+  .footer-grid-heading{
+    margin-bottom: 1.65rem;
+    color: black;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: underline;
+  }
+  
+  .footer-copyright{
+    color: var(--gray);
+    font-size: 0.9rem;
+    padding-bottom: 2rem;
+    /* margin-top: 2rem; */
+    padding-top: 0.5rem;
+    border-top: 2px solid black;
+    text-align: center;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+  }
+  
+  @media screen and (max-width:800px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-top{
+        padding-left: 10rem;
+    }
+    .footer-grid{
+        align-self: center;
+        justify-content: space-evenly;
+    }
+
+    .footer-top{
+        padding-left: 1rem;
+    }
+    .footer-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+  
+  @media screen and (max-width:501px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-top{
+        padding-left: 10rem;
+    }
+    .footer-grid{
+        align-self: center;
+        justify-content: space-evenly;
+    }
+
+    .footer-top{
+        padding-left: 1rem;
+    }
+    .footer-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+
+  
+
+  
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+      <div class="header">
+        <header class="header_content">
+          <a href="#logo" class="logo">
+            <img
+              src="DK_logo_design-removebg-preview.png"
+              alt="logoimage"
+              class="logo-icon"
+            />
+            <span class="logo-text">Deepak Kumar</span>
+          </a>
+  
+          <nav class="nav">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#Menu" class="nav-link">Sevices</a>
+            <a href="#Pricing" class="nav-link">Skill</a>
+            <a href="#About" class="nav-link">About</a>
+            <a href="#Contact" class="nav-link">Contact</a>
+          </nav>
+  
+          <a href="#contact" class="contact-button">Reach Us </a>
+  
+          <button type="button" class="menu-button">
+            <img
+              src="Menu_vector_symbol_black_shape_png_image-removebg-preview.png"
+              alt="menuButton"
+              class="menu-icon"
+            />
+          </button>
+        </header>
+      </div>
+    </header>
+
+
+      <main>
+        <div class="content">
+          <section class="main_section">
+            <div class="content_left">
+              <p class="section_label">Very proud to introduce</p>
+              <h1 class="section_title">My Self : Deepak Kumar</h1>
+              <p class="section_description">
+                  As a frontend web developer, I specialize in creating visually stunning and highly 
+                    functional websites that provide seamless user experiences. My expertise in 
+                     HTML, CSS, and JavaScript allows me to bring designs to life, ensuring 
+                      responsiveness across all devices. I focus on intuitive navigation and 
+                        engaging interfaces, optimizing performance for faster load times. Let’s 
+                         collaborate to build a digital presence that not only captivates your 
+                          audience but also drives results, making your vision a reality in the 
+                           online world.
+              </p>
+    
+  
+              <div class="socil-icons">
+                  <a href="https://github.com/deeopakk"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+        
+                  <a href="https://www.linkedin.com/in/deepak-kumar-747963319"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+        
+                  <a
+                    href="https://www.instagram.com/i_am_deepak46"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </div>
+  
+              <div class="button-group">
+                <a href="#start" class="start-button">Contact Us</a>
+                <a href="#tour" class="tour-button">Take Tour</a>
+              </div>
+            </div>
+    
+            <div class="content_right">
+              <div class="image-container">
+                <img
+                  src="linkdn-profilef.png"
+                  alt="sectionimage"
+                  class="section-Image"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+  
+      </main>
+    
+      <section>
+        <div class="feature-container">
+          <div class="feature-content">
+             <div class="main-info">
+               <h2 class="main-title">About MySelf</h2>
+    
+              <p class="main-description">
+                Gather around our table for hearty service and warm smiles! At our
+                Team, every websites is made with technically well, creating the perfect
+                Responsive,and with the good ui&amp;ux experience.
+              </p>
+            </div>
+    
+            <div class="feature-grid">
+              <!-- card1 -->
+              <div class="feature-card1">
+                <div class="icon-container">
+                  <img
+                    src="linkdn-profilef.png"
+                    alt=""
+                    class="feature-svg"
+                  />
+                </div>
+    
+                <div class="feature-info">
+                  <div class="feature-description1">
+                        <p><span1>Name: </span1> <span>Deepak Kumar</span></p>
+                        <p><span1>Job Role: </span1> <span>Frontend Developer</span></p>
+                        <p><span1>Experience: </span1> <span>Fresher</span></p>
+                        <p><span1>Address: </span1> <span>Delhi, India</span></p>
+                  </div>
+                </div>
+              </div>
+              <!-- card2 -->
+              <div class="feature-card">
+                <div class="icon-container">
+                    
+                </div>
+    
+                <div class="feature-info">
+                  <div class="feature-title"></div>
+                                    
+                  <div class="feature-description">
+                    <div class="info">
+                      <h1>About</h1>
+                    <p> Crafting seamless user experiences, one line of code at a time. As per client view apart, from that i build the digital world: where creativity meets technology&amp;
+                        Likely to provide best service to end consumer with Passionate about creating responsive and dynamic websites that engage users.
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card3 -->
+              <div class="feature-card">
+                <div class="icon-container">
+                 
+                </div>
+    
+                <div class="feature-info">
+                  <div class="feature-title"></div>
+    
+                  <div class="feature-description">
+                    <div class="skills-container">
+                      <h2>Skills</h2>
+                      <label for="">HTML 5 (95%)</label>
+                      <div class="skills">
+                        
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+  
+                    </div>
+                      <label for="">CSS 3 (85%)</label>
+                    <div class="skills">
+                        
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <label for="">JAVA SCRIPT (90%)</label>
+                    <div class="skills">
+                        
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+  
+              <label for="">MY SQL (85%)</label>
+              <div class="skills">
+                  
+                  <div class="skill-bar">
+                      <div class="skill-progress" style="width: 85%;"></div>
+                  </div>
+              </div>
+                <label for="">GIT & GITHUB (80%)</label>
+              <div class="skills">
+                  
+                  <div class="skill-bar">
+                      <div class="skill-progress" style="width: 80%;"></div>
+                  </div>
+              </div>
+  
+              <label for="">ADOBE PHOTOSHOP (70%)</label>
+              <div class="skills">
+                  
+                  <div class="skill-bar">
+                      <div class="skill-progress" style="width: 70%;"></div>
+                  </div>
+              </div>
+          </div>
+  
+  
+                  </div>
+                </div>
+              </div>
+              <!-- card4 -->
+              <div class="feature-card">
+                <div class="icon-container">
+                 
+                </div>
+    
+                <div class="feature-info">
+                  <div class="feature-title"></div>
+    
+                  <div class="feature-description">
+                    <div class="about-info2">
+                      <ul>
+                        <li><span1>Profile: </span1> <span> Frontend Developer &amp; Web Desginer</span></li>
+                        <li><span1>Domain: </span1> <span>Retail, E-commerce, Seo &amp; Digital Marketing</span></li>
+                        <li><span1>Education: </span1> <span>Bachelor of Commerce (Honours)</span></li>
+                        <li><span1>Language: </span1> <span>English, Hindi</span></li>
+                        <li><span1>Other Skills: </span1> <span> Vs code , Word , Adobe Photoshop , Excel , Git,Google Analytics &amp; Seo </span></li>
+                        <li><span1>Interest: </span1> <span> Traveling , Travel Photography , Playing Cricket  </span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 5th card -->
+              <div class="feature-card2">  
+                <div class="feature-info">
+                  <div class="feature-description">
+                    <div class="about-info3">
+                      <div id="project">
+                        <p>
+                          <span class="number" data-number="30">0</span> <span>+</span>
+                          <span>&nbsp; Projects completed</span>
+                        </p>
+                        
+                        <p>
+                          <a href="https://github.com/deeopakk"><button class="but1">Git hub</button></a>
+                        </p>
+          
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </section>
+
+
+      <section>
+        <div class="feature-containers">
+          <div class="feature-contents">
+            <div class="main-infos">
+              <h2 class="main-titles">Experience</h2>
+    
+              <p class="main-descriptions">
+                
+              </p>
+            </div>
+    
+            <div class="feature-grids">
+              <!-- card1 -->
+              <div class="feature-cards">
+                <div class="icon-containers">
+                  
+                </div>
+    
+                <div class="feature-infos">
+                  <div class="feature-titles"></div>
+    
+                  <div class="feature-descriptions">
+                    <span1>2024-(Present)</span1>
+                    <h2>Web Developer</h2>
+                    <span1>WCSC</span1>
+                    <p>Wcsc give a chance to get skill about Frontend Developer with a keen eye for design and usability, committed to delivering high-quality code and engaging web experiences through modern frameworks and tools.
+                      <ul>
+                        <li>Frontend Developer with expertise in crafting intuitive and visually appealing user interfaces using HTML, CSS, and JavaScript.</li>
+                        <li>Proficient in building and maintaining dynamic, responsive websites and applications.</li>
+                        <li>with hands-on experience in version control systems like Git and collaborative development workflows.</li>
+                      </ul>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+              <!-- card2 -->
+              <div class="feature-cards">
+                <div class="icon-containers">
+                  
+                </div>
+    
+                <div class="feature-infos">
+                  <div class="feature-titles"></div>
+    
+                  <div class="feature-descriptions">
+                    <span1>2024-(6Months)</span1>
+                    <h2>Accountant</h2>
+                    <span1>Thinkbridge Advisory LLP</span1>
+                    <p>Thinkbridge Advisory llp is a Ca Firm which is Deals with Corporate sectors formal legal works and Documentation Formality apart from that they also manage Gst,Tds and Tcs Clients Over the World. 
+                      <ul>
+                        <li>Performed in-depth Knowledge about the corporate sector works.</li>
+                        <li>Also Handling the roots clients of Taxation Service and Business Consulting,also making company Audit Reports.</li>
+                        <li>Managing payroll processing, including calculating Deductions, and compliance with corporate laws.</li>
+                      </ul>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+           </div>
+
+      </section>
+
+
+          <section>
+            <div class="feature-containers">
+              <div class="feature-contents">
+                <div class="main-infos">
+                  <h2 class="main-titles">Education</h2>
+        
+                  <p class="main-descriptions">
+                    
+                  </p>
+                </div>
+        
+                <div class="feature-grids">
+                  <!-- card1 -->
+                  <div class="feature-cards">
+                    <div class="icon-containers">
+                      
+                    </div>
+        
+                    <div class="feature-infos">
+                      <div class="feature-titles"></div>
+        
+                      <div class="feature-descriptions">
+                        <span1></span1>
+                        <h2>2023-2027</h2>
+                        <span1></span1>
+                        <span></span>
+                        <h2>Bachelor of Commerce(Honours)</h2>
+                        <span>Delhi University</span>
+    
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card2 -->
+                  <div class="feature-cards">
+                    <div class="icon-containers">
+                      
+                    </div>
+        
+                    <div class="feature-infos">
+                      <div class="feature-titles"></div>
+        
+                      <div class="feature-descriptions">
+                        <span1></span1>
+                        <h2>2021-2023</h2>
+                        <span1></span1>
+                        <span></span>
+                        <h2>Higher Secondary School</h2>
+                        <span>Govt.co-ed Sarvodaya Vidyalaya Dwarka sec-17</span>
+
+
+                        
+    
+                      </div>
+                    </div>
+                  </div>
+               </div>
+               
+               
+               <div class="but5">
+                <a href="">Download Cv</a>
+               </div>
+          </section>
+
+
+          <section class="service" >
+            <h1><span>Our Services</span></h1>
+            <h3 class="typing-texts">Assistance provide <span></span></h3>
+            <p>
+              Web development serves to create and maintain websites, ensuring they are functional, user-friendly, and visually appealing. Its purpose is to provide an engaging online presence for individuals and businesses, facilitating communication, e-commerce, and information sharing. 
+              <br />
+              Through web development, developers build responsive designs that enhance user experience across devices, optimize performance for speed and accessibility, and implement security measures to protect data. Ultimately, it empowers organizations to reach broader audiences and achieve their goals in the digital landscape.Ultimately, web development drives digital engagement, enhances brand visibility, and helps achieve specific goals, making it an essential component of modern marketing and communication strategies.
+            </p>
+      
+            <div class="mainipulation">
+               <div class="boxes">
+                <!-- card1 -->
+                 <a href="#"><i class="fa-solid fa-bars"></i></a>
+                 <h2>WEB DEVELOPMENT</h2>
+                 <p1>
+                  Every website should be built with two primely goals. firstly, it need
+                  to work across over all device. Secondly, it needs to be fast as Interactive.
+                 </p1>
+              </div>
+           <!-- card2 -->
+               <div class="boxes">
+                  <a href="#"><i class="fa-solid fa-bars"></i></a>
+                  <h2>GRAPHIC DESIGN</h2>
+                  <p1>
+                  Graphic design visually communicates ideas through images, typography, and layouts. Its purpose is to enhance brand identity, engage audiences, and convey messages effectively across various digital and print platforms.
+                  </p1>
+               </div>
+            <!-- card3 -->
+               <div class="boxes"> 
+                  <a href="#"><i class="fa-solid fa-bars"></i></a>
+                  <h2>UI/UX DESIGN</h2>
+                  <p1>
+                  UI/UX design focuses on creating intuitive and engaging user experiences for websites and applications. Its purpose is to enhance usability, improve user satisfaction, and ensure seamless interactions, ultimately driving user engagement and achieving business goals through thoughtful design.
+                  </p1>
+               </div>
+              <!-- card4 -->
+               <div class="boxes">
+                 <a href="#"><i class="fa-solid fa-bars"></i></a>
+                 <h2> Video Editing </h2>
+                 <p1>
+                  We also provide facility for client by Adobe Premiere Pro, We expertly edit your videos to enhance storytelling. We ensure seamless transitions, precise cuts, and vibrant visuals, delivering a polished final product tailored to your vision, all while maintaining high-quality audio and video standards.
+                 </p1>
+               </div>
+            <!-- card5 -->
+               <div class="boxes"> 
+                  <a href="#"><i class="fa-solid fa-bars"></i></a>
+                  <h2> Logo Design </h2>
+                  <p1> 
+                  Transform your vision into a striking logo that speaks volumes. I craft unique designs that capture your brand's essence and set you apart. From concept to completion, let’s create a visual identity that resonates with your audience and stands the test of time.
+                  </p1>
+               </div>
+          <!-- card6 -->
+               <div class="boxes"> 
+                 <a href="#"><i class="fa-solid fa-bars"></i></a>
+                 <h2> Join Course</h2>
+                 <p1> 
+                  Join our Web Development Course to master HTML, CSS, and JavaScript. Build real projects, collaborate with peers, and gain the skills needed to create dynamic, responsive websites. Start your journey today!
+                 </p1> 
+              </div>
+
+            </div>
+          </section>
+
+
+         
+
+        
+        <section class="skills-heads" >
+          
+          <div class="heading-skill">
+            <h1>My Skills</h1>
+          </div>
+            <div class="skill-unique">
+              
+               <!-- card1 -->
+              <div class="areas">
+                <a href="#"><i style="color: rgb(197, 42, 42)" class="fa-brands fa-html5"></i
+                  ></a>
+                  
+                  <h2>HTML</h2>
+   
+                  <p>
+                   HTML5 (Hypertext Markup Language 5) is a markup language used for
+                   structuring and presenting hypertext documents on the World Wide
+                   Web. It was the fifth and final major HTML version that is now a
+                   retired World Wide Web Consortium (W3C) recommendation. The current
+                   specification is known as the HTML Living Standard.
+                 </p>
+   
+               </div>
+               
+               <!-- card2 -->
+               <div class="areas">
+                <a href="#"
+                ><i
+                  style="color: rgb(28, 64, 156)"
+                  class="fa-brands fa-css3-alt"
+                ></i
+              ></a>
+              <h2>CSS 3</h2>
+              <p>
+                CSS3, or Cascading Style Sheets Level 3, is the latest version of
+                Cascading Style Sheets (CSS). It's used to make web pages more
+                attractive and user-friendly by styling them. CSS3 has many advanced
+                features that make web design more dynamic and visually appealing,
+                including:
+              </p>
+
+               </div>
+               
+               <!-- card3 -->
+               <div class="areas">
+                <a href="#"><i style="color: yellow" class="fa-brands fa-js"></i></a>
+                <h2>JavaSCRIPT</h2>
+                <p>
+                  JavaScript, often abbreviated as JS, is a programming language and
+                  core technology of the Web, alongside HTML and CSS. 99% of websites
+                  use JavaScript on the client side for webpage behavior. Web browsers
+                  have a dedicated JavaScript engine that executes the client code.
+                </p>
+
+               </div>
+               
+               <!-- card4 -->
+               <div class="areas">
+                <a href="#"><i style="background-color: rgb(26, 47, 181); color: white"
+                  class="fa-brands "></i
+              >
+              <img src="Adobe_Premier_Logo_-_PNG_Logo_Vector_Brand_Downloads__SVG__EPS_-removebg-preview.png" id="img6"></a>
+              <h2>ADOBE PREMIERE PRO</h2>
+              <p>
+                Seamlessly edit your footage, add stunning effects, and craft compelling stories. Whether you’re a beginner or pro, this powerful software offers endless possibilities to bring your vision to life. Elevate your videos with precision and style—let’s make magic happen!
+              </p>
+
+               </div>
+
+               <!-- card5 -->
+               <div class="areas">
+                <a href="#"
+                ><i style="color: rgb(72, 96, 156)" class="fa-solid fa-database"></i
+              ></a>
+              <h2>MYSQL</h2>
+              <p>
+                MySQL is an open-source relational database management system
+                (RDBMS)123. It enables users to store, manage, and retrieve
+                structured data efficiently2. MySQL is widely used for various
+                applications, from small-scale projects to large-scale websites and
+                enterprise-level solutions2.
+              </p>
+
+               </div>
+
+                <!-- card6 -->
+               <div class="areas">
+                <a href="#">
+                  <i style="color: white" class="fa-brands fa-"></i>
+                  <img src="Photoshop_software_Icon__logo__png-removebg-preview.png" id="img6">
+                </a>
+                <h2>ADOBE PHOTOSHOP</h2>
+                <p>
+                  Elevate your visuals with Adobe Photoshop editing. Transform photos, create stunning graphics, and unleash your creativity with powerful tools at your fingertips. From retouching to compositing, I bring your ideas to life with precision and artistry. Let’s enhance your images and make them unforgettable!
+                </p>
+
+               </div>
+            </div>
+
+        </section>
+             
+
+        <footer>
+          <div class="footer-container">
+            <footer class="footer">
+      
+                <div class="footer-top">
+      
+                    <div class="comp-logo">
+                        <a class="logo-link" href="#">
+                            <img class="logo-svg" src="DK_logo_design-removebg-preview.png"/>
+                            Web Developer
+                        </a>
+                    </div>
+                    <p class="filler-text">Seamless Learning for Brighter Futures.</p>
+                    <div class="social1">
+                            <a class="social-link" href="#">
+                                <img src="download-removebg-preview.png" class="social-icon1" />
+                            </a>
+                            <a class="social-link">
+                                <img src="Microsoft_Unveils_Digital_Bookstore-removebg-preview.png" class="social-icon1" />
+                            </a>
+                            <a class="social-link">
+                                <img src="Linkedin_Icon-removebg-preview.png" class="social-icon1" />
+                            </a>
+                            <a class="social-link">
+                                <img src="Iconos_de_Red_Social_Twitter_para_descargar_gratis-removebg-preview.png" class="social-icon1" />
+                            </a>
+                    </div>
+                </div>
+      
+                <div class="footer-grid">
+                            <!-- column 1 -->
+                    <div class="footer-grid-column">
+                                <div class="footer-grid-heading">
+                                    Products
+                                </div>
+                                <ul class="footer-links-list">
+                                    <li>
+                                        <a href="#overview" class="footer-link">Overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="#overview" class="footer-link">Solutions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#overview" class="footer-link">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#overview" class="footer-link">Customers</a>
+                                    </li>
+                                </ul>
+                    </div>
+                            <!-- column 2 -->
+                    <div class="footer-grid-column">
+                                <div class="footer-grid-heading">
+                                    Company
+                                </div>
+                                <ul class="footer-links-list">
+                                    <li>
+                                        <a href="#overview" class="footer-link">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#overview" class="footer-link">Investor Relations</a>
+                                    </li>
+                                    <li>
+                                        <a href="#overview" class="footer-link">Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#overview" class="footer-link">Press</a>
+                                    </li>
+                                    <li>
+                                        <a href="#overview" class="footer-link">Blog</a>
+                                    </li>
+                                </ul>
+                    </div>
+                            <!-- column 3 -->
+                    <div class="footer-grid-column">
+                                <div class="footer-grid-heading">
+                                    Support
+                                </div>
+                                <ul class="footer-links-list">
+                                    <li>
+                                        <a href="#overview" class="footer-link">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="#overview" class="footer-link">Documentation</a>
+                                    </li>
+                                    <li>
+                                        <a href="#overview" class="footer-link">Chat</a>
+                                    </li>
+                                    <li>
+                                        <a href="#overview" class="footer-link">FAQ</a>
+                                    </li>
+                                </ul>
+                    </div>
+                            <!-- column 4 -->
+                    <div class="footer-grid-column">
+                                <div class="footer-grid-heading">
+                                    Legal
+                                </div>
+                                <ul class="footer-links-list">
+                                    <li>
+                                        <a href="#overview" class="footer-link">Terms of Service</a>
+                                    </li>
+                                    <li>
+                                        <a href="#overview" class="footer-link">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#overview" class="footer-link">Cookie Settings</a>
+                                    </li>
+                                    
+                                </ul>
+                    </div>
+                </div>
+            </footer>
+            <div class="footer-copyright">
+                © 2024 - Present Deepak Kumar. All rights reserved.
+            </div>
+        </div> 
+        </footer>    
+          
+                  
+                    
+              
+
+
+          
+      
+</body>
+</html>
